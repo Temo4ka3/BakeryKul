@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0588af56359d47338e077701f4d4ceb4" Name="Diagram1">
+        <EntityTypeShape EntityType="BakeryKulModel.Client" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="BakeryKulModel.Product" Width="1.5" PointX="3.75" PointY="8.5" />
+        <EntityTypeShape EntityType="BakeryKulModel.ProductType" Width="1.5" PointX="1.5" PointY="9.125" />
+        <EntityTypeShape EntityType="BakeryKulModel.Purchase" Width="1.5" PointX="6" PointY="3.875" />
+        <EntityTypeShape EntityType="BakeryKulModel.PurchaseProduct" Width="1.5" PointX="8.25" PointY="3.875" />
+        <EntityTypeShape EntityType="BakeryKulModel.Role" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="BakeryKulModel.User" Width="1.5" PointX="3" PointY="3.875" />
+        <EntityTypeShape EntityType="BakeryKulModel.Employee" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="BakeryKulModel.FK_Purchase_Client" />
+        <AssociationConnector Association="BakeryKulModel.FK_Product_ProductType" />
+        <AssociationConnector Association="BakeryKulModel.FK_Purchase_Product" />
+        <AssociationConnector Association="BakeryKulModel.FK_PurchaseProduct_Product" />
+        <AssociationConnector Association="BakeryKulModel.FK_PurchaseProduct_Purchase" />
+        <AssociationConnector Association="BakeryKulModel.FK_Employee_Role" />
+        <AssociationConnector Association="BakeryKulModel.FK_User_Role" />
+        <AssociationConnector Association="BakeryKulModel.UserClient" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
